@@ -24,6 +24,7 @@ div {
   text-transform: capitalize;
 }
 #temperature {
+  margin-left: 30px;
   font-size: 35px;
 }
 #celsius {
@@ -43,7 +44,10 @@ div {
 }
 ul {
   list-style-type: none;
-  margin-left: -30px;
+  margin-left: 0px;
+}
+#max-temp {
+  margin-left: 30px;
 }
 .searchBtn {
   background-color: #728fec;
@@ -56,6 +60,10 @@ ul {
   border-radius: 8px;
 }
 .row {
+  padding-top: 30px;
   text-align: center;
   font-size: 18px;
+}
+.code-link {
+  padding-top: 70px;
 }
