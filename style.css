@@ -1,3 +1,61 @@
+body {
+  padding-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+h2,
+h4 {
+  color: #a152c0;
+}
+
 h1 {
-  color: blue;
+  padding-top: 20px;
+}
+div {
+  display: block;
+}
+#description {
+  text-align: center;
+  text-transform: capitalize;
+}
+#temperature {
+  font-size: 35px;
+}
+#celsius {
+  font-size: 15px;
+  vertical-align: super;
+}
+
+.emoji {
+  text-align: center;
+  font-size: 40px;
+}
+.Search-City {
+  margin-top: 40px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+  margin-left: -30px;
+}
+.searchBtn {
+  background-color: #728fec;
+  color: #fff;
+  border-radius: 8px;
+}
+.currentBtn {
+  background-color: #a152c0;
+  color: #fff;
+  border-radius: 8px;
+}
+.row {
+  text-align: center;
+  font-size: 18px;
 }
