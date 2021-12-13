@@ -11,7 +11,7 @@ h4 {
 }
 h2,
 h4 {
-  color: #a152c0;
+  color: #ab89aa;
 }
 
 h1 {
@@ -33,6 +33,7 @@ ul {
 .weather-description .active {
   color: #31302d;
   cursor: default;
+  text-decoration: none;
 }
 .weather-description .active:hover {
   text-decoration: none;
