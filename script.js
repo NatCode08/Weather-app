@@ -2,7 +2,6 @@
 
 function getDate() {
   let currentDate = new Date();
-  console.log(currentDate);
   let h1 = document.querySelector("#date");
   let days = [
     "Sunday",
@@ -27,6 +26,7 @@ function getDate() {
 getDate();
 
 function showTemperature(response) {
+  console.log(response);
   document.querySelector("#display-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
@@ -45,6 +45,12 @@ function showTemperature(response) {
   )}ºC`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
@@ -77,3 +83,5 @@ searchBtn.addEventListener("click", searchForCityWeather);
 let currentBtn = document.querySelector("#current-location-button");
 currentBtn.addEventListener("click", showCurrentLocation);
 searchCity("Madrid");
+
+let celsiusLink = document.querySelector("#celsius");
