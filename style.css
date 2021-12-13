@@ -4,13 +4,10 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
   text-align: center;
 }
-h2,
-h4 {
+h2 {
   color: #a152c0;
 }
 
@@ -25,8 +22,9 @@ ul {
   margin-top: 30px;
   margin-left: 0px;
 }
-.li {
-  display: inline;
+.weather-app {
+  width: 800px;
+  margin: 0 auto;
 }
 .Search-City {
   margin-top: 40px;
@@ -54,6 +52,9 @@ ul {
 }
 .weather-description .active {
   text-decoration: none;
+}
+.code-link {
+  margin-top: 50px;
 }
 
 #description {
