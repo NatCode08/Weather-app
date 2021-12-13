@@ -46,6 +46,8 @@ function showTemperature(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
 
+  celsiusTemp = response.data.main.temp;
+
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
@@ -77,11 +79,30 @@ function showCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchActualLocation);
 }
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+//let form = document.querySelector("#search-text-input");
+//form.addEventListener("submit",);
 
 let searchBtn = document.querySelector("#search-location-button");
 searchBtn.addEventListener("click", searchForCityWeather);
 let currentBtn = document.querySelector("#current-location-button");
 currentBtn.addEventListener("click", showCurrentLocation);
-searchCity("Madrid");
 
-let celsiusLink = document.querySelector("#celsius");
+let celsiusTemp = null;
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+searchCity("Madrid");
