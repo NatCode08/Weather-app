@@ -11,7 +11,7 @@ h4 {
 }
 h2,
 h4 {
-  color: #ab89aa;
+  color: #a152c0;
 }
 
 h1 {
@@ -29,13 +29,24 @@ ul {
   padding: 5px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+.searchBtn {
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: #2e768b;
+  color: #fff;
+}
+.currentBtn {
+  border-radius: 3px;
+  background-color: #a152c0;
+  color: #fff;
 }
 .weather-description .active {
   color: #31302d;
   cursor: default;
-  text-decoration: none;
 }
-.weather-description .active:hover {
+.weather-description .active {
   text-decoration: none;
 }
 
@@ -50,6 +61,7 @@ ul {
 #celsius #fahrenheit {
   font-size: 15px;
   float: inherit;
+  text-decoration: none;
 }
 
 #icon {
