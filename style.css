@@ -32,6 +32,10 @@ ul {
 }
 .weather-description .active {
   color: #31302d;
+  cursor: default;
+}
+.weather-description .active:hover {
+  text-decoration: none;
 }
 
 #description {
@@ -45,7 +49,6 @@ ul {
 #celsius #fahrenheit {
   font-size: 15px;
   float: inherit;
-  text-decoration: none;
 }
 
 #icon {
