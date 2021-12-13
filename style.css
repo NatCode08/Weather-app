@@ -22,25 +22,31 @@ div {
 }
 ul {
   list-style-type: none;
+  margin-top: 30px;
   margin-left: 0px;
+}
+.li {
+  display: inline;
 }
 .Search-City {
   margin-top: 40px;
   padding: 5px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 .searchBtn {
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 3px;
-  background-color: #2e768b;
+  background-color: #65a2d4;
   color: #fff;
 }
 .currentBtn {
   border-radius: 3px;
   background-color: #a152c0;
   color: #fff;
+}
+.weather-description {
+  text-align: center;
 }
 .weather-description .active {
   color: #31302d;
@@ -67,8 +73,4 @@ ul {
 #icon {
   display: block;
   margin: 0 auto;
-}
-
-#max-temp {
-  margin-left: 30px;
 }
