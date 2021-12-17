@@ -29,7 +29,6 @@ function getForecastForWeek(coordinates) {
   console.log(coordinates);
   let apiKey = "c089bdb5f7d0e706e5fbd9cda99f77bc";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(showWeatherForecast);
 }
 
@@ -63,7 +62,8 @@ function showTemperature(response) {
   );
   getForecastForWeek(response.data.coord);
 }
-function showWeatherForecast() {
+function showWeatherForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class = "row">`;
   let days = [
