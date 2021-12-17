@@ -25,6 +25,14 @@ function getDate() {
 }
 getDate();
 
+function showDayTemperature(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function getForecastForWeek(coordinates) {
   console.log(coordinates);
   let apiKey = "c089bdb5f7d0e706e5fbd9cda99f77bc";
@@ -63,31 +71,33 @@ function showTemperature(response) {
   getForecastForWeek(response.data.coord);
 }
 function showWeatherForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class = "row">`;
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `<div class = "col-2">
-            <div class = "weather-forecast-day" id = "day">${day}</div>
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `<div class = "col-2">
+            <div class = "weather-forecast-day" id = "day">${showDayTemperature(
+              forecastDay.dt
+            )}</div>
             <img
-          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
           alt=""
           id="icon"/
           width = "42">
-            <span class = "weather-max-temperature">9º/</span>
-            <span class = "weather-min-temperature">3º</span>
+            <span class = "weather-max-temperature"> ${Math.round(
+              forecastDay.temp.max
+            )}º/</span>
+            <span class = "weather-min-temperature">${Math.round(
+              forecastDay.temp.min
+            )}º</span>
         </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
