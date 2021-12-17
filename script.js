@@ -25,6 +25,14 @@ function getDate() {
 }
 getDate();
 
+function getForecastForWeek(coordinates) {
+  console.log(coordinates);
+  let apiKey = "c089bdb5f7d0e706e5fbd9cda99f77bc";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(showWeatherForecast);
+}
+
 function showTemperature(response) {
   console.log(response);
   document.querySelector("#display-city").innerHTML = response.data.name;
@@ -53,6 +61,7 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  getForecastForWeek(response.data.coord);
 }
 function showWeatherForecast() {
   let forecastElement = document.querySelector("#forecast");
@@ -75,7 +84,7 @@ function showWeatherForecast() {
           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
           alt=""
           id="icon"/
-          width = 42px>
+          width = "42">
             <span class = "weather-max-temperature">9º/</span>
             <span class = "weather-min-temperature">3º</span>
         </div>`;
@@ -142,4 +151,3 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 searchCity("Madrid");
-showWeatherForecast();
