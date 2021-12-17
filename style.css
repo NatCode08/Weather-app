@@ -43,14 +43,14 @@ ul {
   background-color: #a152c0;
   color: #fff;
 }
-.weather-description {
+.weather-forecast {
   text-align: center;
 }
-.weather-description .active {
+.weather-forecast .active {
   color: #31302d;
   cursor: default;
 }
-.weather-description .active {
+.weather-forecast .active {
   text-decoration: none;
 }
 .code-link {
