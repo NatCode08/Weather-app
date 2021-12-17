@@ -54,6 +54,24 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+function showWeatherForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class = "row">`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-2">
+            <strong>Tue</strong>
+            <img
+          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+          alt="clear"
+          id="icon"
+        />
+            <div>9º / 3º</div>
+          </div>
+        </div>`;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function searchCity(city) {
   let apiKey = "c089bdb5f7d0e706e5fbd9cda99f77bc";
@@ -95,6 +113,7 @@ function showCelsiusTemperature(event) {
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 }
+
 //let form = document.querySelector("#search-text-input");
 //form.addEventListener("submit",);
 
@@ -111,3 +130,4 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 searchCity("Madrid");
+showWeatherForecast();
