@@ -57,18 +57,30 @@ function showTemperature(response) {
 function showWeatherForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class = "row">`;
-  forecastHTML =
-    forecastHTML +
-    `<div class="col-2">
-            <strong>Tue</strong>
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class = "col-2">
+            <div class = "weather-forecast-day" id = "day">${day}</div>
             <img
           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-          alt="clear"
-          id="icon"
-        />
-            <div>9º / 3º</div>
-          </div>
+          alt=""
+          id="icon"/
+          width = 42px>
+            <span class = "weather-max-temperature">9º/</span>
+            <span class = "weather-min-temperature">3º</span>
         </div>`;
+  });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
