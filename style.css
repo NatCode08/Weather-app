@@ -56,17 +56,22 @@ ul {
   color: #fff;
 }
 
-#description {
+#description:first-letter {
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 #temperature {
   margin-left: 30px;
-  font-size: 35px;
+  font-size: 48px;
 }
 #celsius #fahrenheit {
-  font-size: 15px;
-  float: inherit;
+  color: #e8eaed;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 6px;
+  padding-left: 6px;
+  vertical-align: top;
   text-decoration: none;
 }
 
