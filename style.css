@@ -32,17 +32,7 @@ ul {
   display: block;
   margin: 0 auto;
 }
-.searchBtn {
-  margin-top: 10px;
-  border-radius: 3px;
-  background-color: #65a2d4;
-  color: #fff;
-}
-.currentBtn {
-  border-radius: 3px;
-  background-color: #a152c0;
-  color: #fff;
-}
+
 .current-weather-forecast {
   text-align: center;
 }
@@ -55,6 +45,15 @@ ul {
 }
 .code-link {
   margin-top: 50px;
+}
+
+#search-location-button {
+  background-color: blue;
+  color: #fff;
+}
+#current-location-button {
+  background-color: #a152c0;
+  color: #fff;
 }
 
 #description {
