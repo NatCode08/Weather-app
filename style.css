@@ -21,6 +21,7 @@ ul {
   list-style-type: none;
   margin-top: 30px;
   margin-left: 0px;
+  text-align: center;
 }
 .weather-app {
   width: 800px;
@@ -55,14 +56,20 @@ ul {
   background-color: #a152c0;
   color: #fff;
 }
-
+#description {
+  font-weight: bold;
+  text-align: center;
+}
 #description:first-letter {
   text-align: center;
   text-transform: uppercase;
 }
 #temperature {
-  margin-left: 30px;
+  display: inline-block;
   font-size: 48px;
+  line-height: 60px;
+  vertical-align: top;
+  color: #000;
 }
 #celsius #fahrenheit {
   color: #e8eaed;
@@ -76,6 +83,15 @@ ul {
 }
 
 #icon {
-  display: block;
+  display: flex;
   margin: 0 auto;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+}
+#forecast {
+  margin: 40px;
+  display: inline;
+  text-align: center;
 }
