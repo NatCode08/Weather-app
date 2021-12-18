@@ -41,7 +41,6 @@ function getForecastForWeek(coordinates) {
 }
 
 function showTemperature(response) {
-  console.log(response);
   document.querySelector("#display-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
@@ -144,9 +143,6 @@ function showCelsiusTemperature(event) {
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 }
-
-//let form = document.querySelector("#search-text-input");
-//form.addEventListener("submit",);
 
 let searchBtn = document.querySelector("#search-location-button");
 searchBtn.addEventListener("click", searchForCityWeather);
