@@ -1,6 +1,6 @@
 body {
   padding-top: 20px;
-  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background: linear-gradient(360deg, #b2e3ee -73.08%, #b6d5ec 119.47%);
 }
 
 h1,
@@ -27,13 +27,40 @@ ul {
   width: 800px;
   margin: 0 auto;
 }
-.Search-City {
+form {
+  position: static;
+  right: 0%;
+  bottom: 0%;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 40px;
+  height: 30px;
+  width: 270px;
+  left: 0px;
+  top: 0px;
+  border-radius: 40px;
+}
+.search-city {
   margin-top: 40px;
   padding: 5px;
   display: block;
   margin: 0 auto;
+  width: 100px;
 }
+.displayCity {
+  position: absolute;
+  width: 383px;
+  height: 56px;
+  left: 522px;
+  top: 131px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 51px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.04em;
 
+  color: #333e46;
+}
 .current-weather-forecast {
   text-align: center;
 }
@@ -47,7 +74,23 @@ ul {
 .code-link {
   margin-top: 50px;
 }
+#hour {
+  position: absolute;
+  width: 163px;
+  height: 15px;
+  left: 536px;
+  top: 24px;
 
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  text-transform: uppercase;
+
+  color: #687e8e;
+}
 #search-location-button {
   background-color: blue;
   color: #fff;
