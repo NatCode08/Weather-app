@@ -169,9 +169,11 @@ ul {
 }
 #humidity-icon {
   color: rgb(64, 192, 252);
+  font-size: 25px;
+  display: inline;
 }
 #wind-icon {
-  font-size: 20px;
+  font-size: 25px;
   display: inline;
 }
 #forecast {
