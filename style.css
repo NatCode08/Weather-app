@@ -66,7 +66,8 @@ h1:first-letter {
 }
 #hour {
   margin-bottom: 30px;
-  margin-left: 100px;
+  top: 10%;
+  left: 20%;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -84,7 +85,7 @@ h1:first-letter {
   padding: 5px;
   width: 20%;
   top: 10%;
-  right: 10%;
+  right: 20%;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -165,4 +166,5 @@ h1:first-letter {
 }
 #developer {
   font-family: "Inter", sans-serif;
+  left: 30px;
 }
