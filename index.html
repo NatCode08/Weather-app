@@ -23,27 +23,26 @@
   <body>
     <span id="date"></span> 
     <span id="hour"></span> 
-    <span>
-      <a href="#" id="current-location> Go back to local weather </a>
+    <span id= current-location>
+      <button type="button" id="current-location-button"> Local weather</button>
      </span>
+    
     <div class="container" id="weather-app">
       <form id="type-city">
         <input
           id="search-text-input"
           type="text"
-          placeholder=" 🔎 Search for another city"
+          placeholder= "Search for another city"
           class="search-City"
           autofocus= "off"
+          width="150"
         />
+        <input type="submit" value="Search" id= "search-button" />
       </form>
-      <span
-        ><button type="button" class="btn btn-primary" id="search-location-button">Search</button>
-       </span>
       
-
       <h1 id="display-city"></h1>
+       <div id="description"></div>
 
-      
       <div class="current-weather-forecast">
         <span class="current-temperature" id="temperature"></span>
         <span class="units">
@@ -55,7 +54,7 @@
           alt="clear"
           id="icon"
         />
-        <div id="description"></div>
+       
       </br>
         <ul>
           <li id="humidity">Humidity</li>
