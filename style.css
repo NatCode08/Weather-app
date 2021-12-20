@@ -1,7 +1,7 @@
 body {
   padding-top: 25px;
   background: linear-gradient(360deg, #b2e3ee -73.08%, #b6d5ec 119.47%);
-  margin: 30px 20px;
+  width: 800px;
 }
 
 h1 {
@@ -21,15 +21,15 @@ h1 {
 h1:first-letter {
   text-transform: capitalize;
 }
-div {
-  display: block;
-}
-ul {
+
+.Properties {
   list-style-type: none;
   margin-top: 30px;
   margin-left: 0px;
   text-align: center;
   font-family: "Inter", sans-serif;
+  font-size: 20px;
+  display: block;
 }
 
 .search-City {
@@ -37,11 +37,6 @@ ul {
   padding: 5px;
   width: 250px;
   display: block;
-  margin: 0 auto;
-}
-
-.weather-app {
-  width: 800px;
   margin: 0 auto;
 }
 
@@ -53,7 +48,6 @@ ul {
   line-height: 60px;
   text-align: center;
   letter-spacing: -0.04em;
-
   color: #333e46;
 }
 .current-weather-forecast {
@@ -71,28 +65,30 @@ ul {
   font-family: "Inter", sans-serif;
 }
 #hour {
+  margin-bottom: 30px;
+  margin-left: 100px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
   text-transform: uppercase;
   color: #687e8e;
 }
 #line {
-  width: 60px;
-
-  left: 720px;
+  width: 40px;
+  margin-right: 150px;
   top: 21px;
   border: 1px solid #687e8e;
   transform: rotate(90deg);
+  align-items: center;
 }
 #description {
   font-weight: bold;
 }
 #current-location-button {
-  margin: 30px;
+  position: absolute;
+  margin-right: 100px;
   padding: 5px;
   width: 20%;
   top: 5%;
@@ -119,15 +115,6 @@ ul {
   text-align: center;
   letter-spacing: -0.02em;
   color: #687e8e;
-}
-#search-button {
-  background-color: #31302d;
-  color: #fff;
-  border-radius: 15px;
-  padding: 5px;
-  width: 10%;
-  opacity: 85%;
-  display: inline;
 }
 
 #temperature {
@@ -167,17 +154,19 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
 #humidity-icon {
   color: rgb(64, 192, 252);
   font-size: 25px;
   display: inline;
 }
+
 #wind-icon {
   font-size: 25px;
   display: inline;
 }
 #forecast {
-  margin: 40px;
+  padding: 40px;
   display: inline;
   text-align: center;
   font-family: "Work Sans", sans-serif;

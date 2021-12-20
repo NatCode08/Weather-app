@@ -23,12 +23,12 @@
   <body>
 
   <div class="container" id="weather-app">
-    <span id="hour"></span> 
-    <span id="line"></span>
-    <span id= current-location >
+ <div  id="hour">   
+ </div>
+ <div  id="current-location" >
       <button type="button" id="current-location-button"> Local weather</button>
-     </span>
-  
+ </div>
+
       <form id="type-city">
         <input
           id="search-text-input"
@@ -37,8 +37,8 @@
           class="search-City"
           autofocus= "off"
           width="150"
+          autocomplete="off"
         />
-        <input type="submit" value="Search" id= "search-button"/>
       </form>
       
       <h1 id="display-city"></h1>
@@ -59,10 +59,14 @@
         <span> <a href="#" id="fahrenheit-link">ºF</a> </span>
    
       </br>
-        <ul>
-          <li id="humidity">Humidity</li><i class="fas fa-tint" id="humidity-icon"></i>
-          <li id="wind">Wind</li><i class="fas fa-wind" id="wind-icon"></i>
-        </ul>
+        <div class= "Properties">
+           <i class="fas fa-tint" id="humidity-icon"></i>
+          <div id="humidity"></div>
+        </br>
+         <i class="fas fa-wind" id="wind-icon"></i>
+          <div id="wind"></div>
+           
+        </div>
         
       </div>
       <div class="weather-forecast" id="forecast"></div>

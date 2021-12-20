@@ -67,10 +67,10 @@ function showTemperature(response) {
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
   )}`;
-  document.querySelector("#humidity").innerHTML = `Humidity: ${Math.round(
+  document.querySelector("#humidity").innerHTML = `Humidity ${Math.round(
     response.data.main.humidity
   )}%`;
-  document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
+  document.querySelector("#wind").innerHTML = `Wind ${Math.round(
     response.data.wind.speed
   )} km/h`;
 
