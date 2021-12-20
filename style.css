@@ -46,11 +46,6 @@ ul {
 }
 
 .displayCity {
-  position: absolute;
-  width: 383px;
-  height: 56px;
-  left: 522px;
-  top: 131px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -86,8 +81,8 @@ ul {
   color: #687e8e;
 }
 #line {
-  width: 21px;
-  height: 0px;
+  width: 60px;
+
   left: 720px;
   top: 21px;
   border: 1px solid #687e8e;
@@ -97,19 +92,20 @@ ul {
   font-weight: bold;
 }
 #current-location-button {
-  position: absolute;
   margin: 30px;
-  padding: 10px;
+  padding: 5px;
+  width: 20%;
   top: 5%;
   right: 5%;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   text-decoration-line: none;
   text-transform: uppercase;
-  border-radius: 8px;
+  border-radius: 16px;
+  background: linear-gradient(360deg, #b2e3ee -73.08%, #b6d5ec 119.47%);
   color: #687e8e;
 }
 #date {
@@ -127,9 +123,9 @@ ul {
 #search-button {
   background-color: #31302d;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
-  width: 100px;
+  width: 10%;
   opacity: 85%;
   display: inline;
 }
@@ -150,10 +146,6 @@ ul {
   color: #333e46;
 }
 #celsius #fahrenheit {
-  width: 150px;
-  height: 116px;
-  left: 541px;
-  top: 240px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -164,15 +156,19 @@ ul {
   text-align: right;
   letter-spacing: -0.04em;
   color: #333e46;
+  float: top;
 }
 
 #icon {
-  display: flex;
+  display: block;
   margin: 0 auto;
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   align-items: center;
   justify-content: center;
+}
+#humidity-icon {
+  color: rgb(64, 192, 252);
 }
 #wind-icon {
   font-size: 20px;

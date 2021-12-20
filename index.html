@@ -21,13 +21,14 @@
     <title>Weather app</title>
   </head>
   <body>
-  
+
+  <div class="container" id="weather-app">
     <span id="hour"></span> 
     <span id="line"></span>
     <span id= current-location >
       <button type="button" id="current-location-button"> Local weather</button>
      </span>
-    <div class="container" id="weather-app">
+  
       <form id="type-city">
         <input
           id="search-text-input"
@@ -42,6 +43,12 @@
       
       <h1 id="display-city"></h1>
        <div id="description"></div>
+           <div><img
+          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+          alt="clear"
+          id="icon" 
+        /></div> 
+       
        <div id="date"></div>
 
       <div class="current-weather-forecast">
@@ -50,12 +57,7 @@
           <a href="#" id="celsius-link" class="active">ºC </a> |
         </span>
         <span> <a href="#" id="fahrenheit-link">ºF</a> </span>
-       <span><img
-          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-          alt="clear"
-          id="icon"
-        /></span> 
-       
+   
       </br>
         <ul>
           <li id="humidity">Humidity</li><i class="fas fa-tint" id="humidity-icon"></i>
@@ -73,6 +75,7 @@
         </a>
         <span id=developer>by Natalia Ortiz</span>
       </div>
+    </div>
     </div>
   </body>
 </html>
