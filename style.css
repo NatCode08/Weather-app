@@ -1,7 +1,8 @@
 body {
   padding-top: 25px;
   background: linear-gradient(360deg, #b2e3ee -73.08%, #b6d5ec 119.47%);
-  width: 800px;
+  width: 100%;
+  margin: 20px 30px;
 }
 
 h1 {
@@ -20,16 +21,6 @@ h1 {
 
 h1:first-letter {
   text-transform: capitalize;
-}
-
-.Properties {
-  list-style-type: none;
-  margin-top: 30px;
-  margin-left: 0px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  display: block;
 }
 
 .search-City {
@@ -60,6 +51,15 @@ h1:first-letter {
 .current-weather-forecast .active {
   text-decoration: none;
 }
+.Properties {
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: 0px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  display: block;
+}
 .code-link {
   margin-top: 50px;
   font-family: "Inter", sans-serif;
@@ -75,24 +75,16 @@ h1:first-letter {
   text-transform: uppercase;
   color: #687e8e;
 }
-#line {
-  width: 40px;
-  margin-right: 150px;
-  top: 21px;
-  border: 1px solid #687e8e;
-  transform: rotate(90deg);
-  align-items: center;
-}
+
 #description {
   font-weight: bold;
 }
 #current-location-button {
   position: absolute;
-  margin-right: 100px;
   padding: 5px;
   width: 20%;
-  top: 5%;
-  right: 5%;
+  top: 10%;
+  right: 10%;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
