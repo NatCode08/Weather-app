@@ -1,13 +1,14 @@
 body {
   padding-top: 25px;
   background: linear-gradient(360deg, #b2e3ee -73.08%, #b6d5ec 119.47%);
+  margin: 30px 20px;
 }
 
 h1 {
   display: block;
   margin-top: 20px;
   padding-top: 20px;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 51px;
@@ -16,36 +17,29 @@ h1 {
   letter-spacing: -0.04em;
   color: #333e46;
 }
+
 h1:first-letter {
   text-transform: capitalize;
 }
 div {
   display: block;
-  margin-left: 30px;
 }
 ul {
   list-style-type: none;
   margin-top: 30px;
   margin-left: 0px;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
 }
 
-form {
-  position: static;
-  right: 0%;
-  bottom: 0%;
-  background: rgba(255, 255, 255, 0.45);
-  height: 30px;
-  width: 270px;
-  left: 0px;
-  top: 0px;
-  border-radius: 40px;
-}
-.search-city {
-  margin-top: 40px;
+.search-City {
+  border-radius: 20px;
   padding: 5px;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
 }
+
 .weather-app {
   width: 800px;
   margin: 0 auto;
@@ -57,6 +51,7 @@ form {
   height: 56px;
   left: 522px;
   top: 131px;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 51px;
@@ -78,26 +73,36 @@ form {
 }
 .code-link {
   margin-top: 50px;
+  font-family: "Inter", sans-serif;
 }
 #hour {
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   color: #687e8e;
-  margin-left: 30px;
+}
+#line {
+  width: 21px;
+  height: 0px;
+  left: 720px;
+  top: 21px;
+  border: 1px solid #687e8e;
+  transform: rotate(90deg);
 }
 #description {
   font-weight: bold;
 }
 #current-location-button {
   position: absolute;
+  margin: 30px;
+  padding: 10px;
   top: 5%;
   right: 5%;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -108,13 +113,9 @@ form {
   color: #687e8e;
 }
 #date {
-  position: absolute;
+  margin: 30px;
   display: block;
-  width: 357.52px;
-  height: 22px;
-  left: 541px;
-  top: 150px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -127,6 +128,10 @@ form {
   background-color: #31302d;
   color: #fff;
   border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  opacity: 85%;
+  display: inline;
 }
 
 #temperature {
@@ -134,8 +139,7 @@ form {
   height: 116px;
   left: 482px;
   top: 224px;
-
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 120px;
@@ -150,7 +154,7 @@ form {
   height: 116px;
   left: 541px;
   top: 240px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
@@ -170,9 +174,16 @@ form {
   align-items: center;
   justify-content: center;
 }
+#wind-icon {
+  font-size: 20px;
+  display: inline;
+}
 #forecast {
   margin: 40px;
   display: inline;
   text-align: center;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
+}
+#developer {
+  font-family: "Inter", sans-serif;
 }

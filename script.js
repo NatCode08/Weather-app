@@ -110,7 +110,7 @@ function showWeatherForecast(response) {
           width = "42">
             <span class = "weather-max-temperature"> ${Math.round(
               forecastDay.temp.max
-            )}º/</span>
+            )}º /</span>
             <span class = "weather-min-temperature">${Math.round(
               forecastDay.temp.min
             )}º</span>

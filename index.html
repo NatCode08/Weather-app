@@ -14,19 +14,19 @@
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-
+<script src="https://kit.fontawesome.com/b35dbcca32.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
   </head>
   <body>
-    <span id="date"></span> 
+  
     <span id="hour"></span> 
-    <span id= current-location>
+    <span id="line"></span>
+    <span id= current-location >
       <button type="button" id="current-location-button"> Local weather</button>
      </span>
-    
     <div class="container" id="weather-app">
       <form id="type-city">
         <input
@@ -37,11 +37,12 @@
           autofocus= "off"
           width="150"
         />
-        <input type="submit" value="Search" id= "search-button" />
+        <input type="submit" value="Search" id= "search-button"/>
       </form>
       
       <h1 id="display-city"></h1>
        <div id="description"></div>
+       <div id="date"></div>
 
       <div class="current-weather-forecast">
         <span class="current-temperature" id="temperature"></span>
@@ -49,17 +50,18 @@
           <a href="#" id="celsius-link" class="active">ºC </a> |
         </span>
         <span> <a href="#" id="fahrenheit-link">ºF</a> </span>
-        <img
+       <span><img
           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
           alt="clear"
           id="icon"
-        />
+        /></span> 
        
       </br>
         <ul>
-          <li id="humidity">Humidity</li>
-          <li id="wind">Wind</li>
+          <li id="humidity">Humidity</li><i class="fas fa-tint" id="humidity-icon"></i>
+          <li id="wind">Wind</li><i class="fas fa-wind" id="wind-icon"></i>
         </ul>
+        
       </div>
       <div class="weather-forecast" id="forecast"></div>
       </div>
@@ -69,7 +71,7 @@
         <a href="https://github.com/NatCode08/Weather-app" target="_blank"
           >Open source-code
         </a>
-        <span>by Natalia Ortiz</span>
+        <span id=developer>by Natalia Ortiz</span>
       </div>
     </div>
   </body>
